@@ -6,6 +6,12 @@ workspace "pastemyst.cpp"
         "Dist"     -- Final distrubutions
     }
 
+    platforms
+    {
+        "x64",
+        "x86",
+    }
+
     outputdir = "%{cfg.buildcfg}-%{cfg.architecture}"
 
   project "pastemyst"
