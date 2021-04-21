@@ -33,4 +33,4 @@ workspace "pastemyst.cpp"
           "%{prj.location}/src/**.cpp",
           "%{prj.location}/include/**"
       }
-      includedirs { "%{prj.name}/include"  }
+      includedirs { "%{prj.location}/include"  }
