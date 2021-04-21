@@ -26,5 +26,11 @@ workspace "pastemyst.cpp"
       targetdir ("bin/" .. outputdir .. "/%{prj.name}")
       objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
-      files { "%{prj.location}/src/**.h", "%{prj.location}/src/**.hpp", "%{prj.location}/src/**.cpp" }
+      files
+      {
+          "%{prj.location}/src/**.h",
+          "%{prj.location}/src/**.hpp",
+          "%{prj.location}/src/**.cpp",
+          "%{prj.location}/include/**"
+      }
       includedirs { "%{prj.name}/include"  }
