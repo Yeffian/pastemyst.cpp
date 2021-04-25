@@ -15,7 +15,7 @@ workspace "pastemyst.cpp"
     outputdir = "%{cfg.buildcfg}-%{cfg.architecture}"
 
   project "pastemyst"
-      location "pastemyst.cpp"
+      location "pastemyst"
       kind "StaticLib"
       language "C++"
 
@@ -34,3 +34,23 @@ workspace "pastemyst.cpp"
           "%{prj.location}/include/**"
       }
       includedirs { "%{prj.location}/include"  }
+      
+   project "Sample"
+      location "Sample"
+      kind "ConsoleApp"
+
+      cppdialect "C++11"
+      staticruntime "on"
+      systemversion "latest"
+
+      targetdir ("bin/" .. outputdir .. "/%{prj.name}")
+      objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
+      files
+      {
+          "%{prj.location}/src/**.h",
+          "%{prj.location}/src/**.hpp",
+          "%{prj.location}/src/**.cpp",
+      }
+      includedirs { "%{wks.location}/pastemyst/include/" }
+      links { "pastemyst" }
