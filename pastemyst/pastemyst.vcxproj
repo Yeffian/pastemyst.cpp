@@ -204,7 +204,7 @@
     <ClInclude Include="include\pastemyst.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\pastemyst.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="include\httplib" />

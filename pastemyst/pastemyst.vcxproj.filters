@@ -14,7 +14,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\main.cpp">
+    <ClCompile Include="src\pastemyst.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
