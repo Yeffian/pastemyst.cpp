@@ -3,6 +3,7 @@
 
 int main()
 {
-	std::cout << test() << std::endl;
+
+	_____
 	std::cout << "Hello World!" << std::endl;
 }
