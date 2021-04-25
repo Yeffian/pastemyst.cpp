@@ -26,6 +26,9 @@ workspace "pastemyst.cpp"
       targetdir ("bin/" .. outputdir .. "/%{prj.name}")
       objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+      filter "configurations:Debug"
+          defines "PASTEMYST_DEBUG"
+
       files
       {
           "%{prj.location}/src/**.h",
