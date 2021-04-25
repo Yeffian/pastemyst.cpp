@@ -1,9 +1,18 @@
-#include <iostream>
-#include <httplib>
-#include <math.h>
+#pragma once
 
-int test() {
-	httplib::Client client("http://enylbx7nd194.x.pipedream.net");
-	auto aaa = client.Get("/");
-	return aaa->status;
+#ifdef PASTEMYST_DEBUG
+	#define PASTEMYST_CPP
+#endif
+
+//#ifdef PASTEMYST_CPP
+
+namespace pastemyst
+{
+	struct Paste
+	{
+
+	};
 }
+
+
+//#endif // PASTEMYST_CPP
